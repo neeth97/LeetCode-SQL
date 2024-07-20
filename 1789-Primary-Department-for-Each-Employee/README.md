@@ -1,4 +1,4 @@
-Table: Employee
+## Table: 
 ```
 +---------------+---------+
 | Column Name   |  Type   |
@@ -24,9 +24,9 @@ The result format is in the following example.
 
  
 
-Example 1:
+## Example 1:
 
-Input: 
+### Input: 
 Employee table:
 ```
 +-------------+---------------+--------------+
@@ -41,7 +41,7 @@ Employee table:
 | 4           | 4             | N            |
 +-------------+---------------+--------------+
 ```
-Output: 
+### Output: 
 ```
 +-------------+---------------+
 | employee_id | department_id |
