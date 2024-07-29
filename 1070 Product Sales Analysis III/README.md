@@ -1,5 +1,5 @@
 ## Table: Sales
-'''
+```
 +-------------+-------+
 | Column Name | Type  |
 +-------------+-------+
@@ -9,7 +9,7 @@
 | quantity    | int   |
 | price       | int   |
 +-------------+-------+
-'''
+```
 (sale_id, year) is the primary key (combination of columns with unique values) of this table.
 product_id is a foreign key (reference column) to Product table.
 Each row of this table shows a sale on the product product_id in a certain year.
@@ -17,14 +17,14 @@ Note that the price is per unit.
  
 
 ## Table: Product
-'''
+```
 +--------------+---------+
 | Column Name  | Type    |
 +--------------+---------+
 | product_id   | int     |
 | product_name | varchar |
 +--------------+---------+
-'''
+```
 product_id is the primary key (column with unique values) of this table.
 Each row of this table indicates the product name of each product.
  
@@ -41,7 +41,7 @@ The result format is in the following example.
 
 ### Input: 
 Sales table:
-''' 
+```
 +---------+------------+------+----------+-------+
 | sale_id | product_id | year | quantity | price |
 +---------+------------+------+----------+-------+ 
@@ -49,9 +49,9 @@ Sales table:
 | 2       | 100        | 2009 | 12       | 5000  |
 | 7       | 200        | 2011 | 15       | 9000  |
 +---------+------------+------+----------+-------+
-'''
+```
 Product table:
-'''
+```
 +------------+--------------+
 | product_id | product_name |
 +------------+--------------+
@@ -59,13 +59,13 @@ Product table:
 | 200        | Apple        |
 | 300        | Samsung      |
 +------------+--------------+
-'''
+```
 ### Output: 
-'''
+```
 +------------+------------+----------+-------+
 | product_id | first_year | quantity | price |
 +------------+------------+----------+-------+ 
 | 100        | 2008       | 10       | 5000  |
 | 200        | 2011       | 15       | 9000  |
 +------------+------------+----------+-------+
-'''
+```
