@@ -4,7 +4,7 @@ with cte as (
     from Products
     where change_date <= '2019-08-16')
 
-# the above calculate the rank of all the prices
+# the above calculates the rank of all the prices
 # for each product. we can use this to find the
 # latest price of each product before the change date
 
