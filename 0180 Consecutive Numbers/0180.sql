@@ -20,3 +20,5 @@ AS (
 SELECT DISTINCT CurrNum AS ConsecutiveNums
 FROM ConsecutiveNumAnalysis
 WHERE CurrNum = PrevNum AND CurrNum = NextNum
+
+# i don't get it whaaa
